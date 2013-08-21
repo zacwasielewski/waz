@@ -422,9 +422,8 @@ body {
 ----------------------------------------------- */
 
 .site-header {
-  margin: 2em 0;
-  padding-bottom: 2em;
-  border-bottom: 1px solid #eee;
+  margin: 3rem 0 1.5rem 0;
+  padding-bottom: 1.5rem;
 }
 .site-title {
   font-weight: 500;
@@ -516,12 +515,12 @@ body {
 ----------------------------------------------- */
 
 .site-content {
-  margin: 2em 0 1em 0;
+  margin: 1.5rem 0 1.5rem 0;
 }
 .sticky {
 }
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.5rem;
 }
 .byline,
 .updated {
@@ -534,16 +533,15 @@ body {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 1.5rem 0 0;
 }
 .page-links {
 	clear: both;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.5rem;
 }
 
 .post {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 2em;
+  padding-bottom: 1.5rem;
 }
 
 .entry-header h1 {
@@ -561,6 +559,7 @@ body {
   letter-spacing: .1em;
   font-weight: light;
   text-transform: uppercase;
+  line-height: 1.5rem;
 }
 .entry-meta a {
   color: inherit;
@@ -569,10 +568,10 @@ body {
 .entry-content {
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1em;
+  margin-bottom: 1.5rem;
 }
 .entry-content p {
-	margin-bottom: 0;
+  margin-bottom: 0;
   text-indent: 2em;
 }
 .entry-content blockquote {
@@ -684,7 +683,6 @@ object {
 .comments-area {
   margin-top: 2em;
   padding-top: 2em;  
-  border-top: 1px solid #eee;
 }
 .comment-content a {
 	word-wrap: break-word;
