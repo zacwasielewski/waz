@@ -35,8 +35,8 @@ function waz_content_nav( $nav_id ) {
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'waz' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'waz' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="nav-previous">Previous Post: %link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'waz' ) . '</span> %title' ); ?>
+		<?php next_post_link( '<div class="nav-next">Next Post: %link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'waz' ) . '</span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
@@ -183,7 +183,7 @@ function waz_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'waz' ),
+	printf( __( '<span class="posted-on">Published on %1$s</span><span class="byline"> by %2$s</span>', 'waz' ),
 		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
 			esc_url( get_permalink() ),
 			esc_attr( get_the_time() ),

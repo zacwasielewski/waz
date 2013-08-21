@@ -98,16 +98,29 @@ a img {
 /* =Global
 ----------------------------------------------- */
 
+html {
+  font: 125%/1.5 freight-text-pro,serif;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
+
 body,
 button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1.6rem;
-	line-height: 1.5;
+	xcolor: #333;
+	xfont-family: sans-serif;
+	xfont-size: 16px;
+	xfont-size: 1.6rem;
+	xline-height: 1.5;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: freight-text-sans,sans-serif;
 }
 
 /* Headings */
@@ -315,15 +328,19 @@ textarea {
 
 /* Links */
 a {
-	color: royalblue;
+	color: rgb(0,113,255);
+	text-decoration: none;
 }
 a:visited {
-	color: purple;
+	/*color: purple;*/
+	color: rgb(0,113,255);
 }
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	/*color: midnightblue;*/
+	color: rgb(0,113,255);
+	border-bottom: 1px solid #ddd;
 }
 
 /* Alignment */
@@ -387,6 +404,42 @@ a:active {
 	clear: both;
 }
 
+/* =Page
+----------------------------------------------- */
+
+body {
+  text-align: center;
+}
+
+#page {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* =Header
+----------------------------------------------- */
+
+.site-header {
+  margin: 2em 0;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eee;
+}
+.site-title {
+  font-weight: 500;
+  font-style: italic;
+}
+.site-title a {
+  color: inherit;
+}
+.site-description {
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* =Navigation
+----------------------------------------------- */
 
 /* =Menu
 ----------------------------------------------- */
@@ -462,6 +515,9 @@ a:active {
 /* =Content
 ----------------------------------------------- */
 
+.site-content {
+  margin: 2em 0 1em 0;
+}
 .sticky {
 }
 .hentry {
@@ -485,6 +541,63 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
+.post {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2em;
+}
+
+.entry-header h1 {
+  font-size: 3rem;
+  font-style: italic;
+}
+.entry-header h1 a{
+  text-decoration: none;
+  color: inherit;
+}
+.entry-meta {
+  font-family: freight-sans-pro,sans-serif;
+  color: #999;
+  font-size: .8rem;
+  letter-spacing: .1em;
+  font-weight: light;
+  text-transform: uppercase;
+}
+.entry-meta a {
+  color: inherit;
+}
+
+.entry-content {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.entry-content p {
+	margin-bottom: 0;
+  text-indent: 2em;
+}
+.entry-content blockquote {
+  margin: 1em 0 1em 0;
+  color: #666;
+  font-style: italic;
+}
+.entry-content blockquote p {
+  xmargin-bottom: 1em;
+  xtext-indent: 0;
+}
+.entry-content blockquote p:before {
+  content: open-quote;
+}
+.entry-content blockquote p:after {
+  content: close-quote;
+}
+
+/* =Footer
+----------------------------------------------- */
+
+.site-footer {
+  margin: 2em 0;
+  font-style: italic;
+}
 
 /* =Asides
 ----------------------------------------------- */
@@ -568,10 +681,20 @@ object {
 /* =Comments
 ----------------------------------------------- */
 
+.comments-area {
+  margin-top: 2em;
+  padding-top: 2em;  
+  border-top: 1px solid #eee;
+}
 .comment-content a {
 	word-wrap: break-word;
 }
 .bypostauthor {
+}
+.comment-reply-title {
+  font-size: 2em;
+  margin-bottom: .25em;
+  font-style: italic;
 }
 
 /* =Widgets
