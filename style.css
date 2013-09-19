@@ -564,11 +564,18 @@ body {
 .entry-meta a {
   color: inherit;
 }
+.entry-meta .posted-on,
+.entry-meta .cat-links,
+.entry-meta .comments-link,
+.entry-meta .edit-link {
+	margin-right: 1em;
+}
 
 .entry-content {
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 .entry-content p {
   margin-bottom: 0;
@@ -588,6 +595,13 @@ body {
 }
 .entry-content blockquote p:after {
   content: close-quote;
+}
+
+.entry-content img {
+	-webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2);
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2);
+	margin: 1em 0;
+	display: block;
 }
 
 /* =Footer
