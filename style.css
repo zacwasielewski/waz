@@ -567,6 +567,7 @@ body {
 .entry-meta .posted-on,
 .entry-meta .cat-links,
 .entry-meta .comments-link,
+.entry-meta .byline,
 .entry-meta .edit-link {
 	margin-right: 1em;
 }
@@ -581,6 +582,16 @@ body {
   margin-bottom: 0;
   text-indent: 2em;
 }
+.entry-content p:first-child {
+	text-indent: 0;
+}
+.entry-content ul + p,
+.entry-content ol + p,
+.entry-content blockquote + p,
+.entry-content div + p {
+	text-indent: 0;
+}
+
 .entry-content blockquote {
   margin: 1em 0 1em 0;
   color: #666;
@@ -590,11 +601,16 @@ body {
   xmargin-bottom: 1em;
   xtext-indent: 0;
 }
+
 .entry-content blockquote p:before {
   content: open-quote;
 }
 .entry-content blockquote p:after {
   content: close-quote;
+}
+.entry-content ul,
+.entry-content ol {
+	margin: 0;
 }
 
 .entry-content img {
