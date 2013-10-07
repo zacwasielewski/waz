@@ -37,6 +37,7 @@
 				} else {
 					$meta_text = __( '', 'waz' );
 				}
+				$meta_text = '<span class="tags-links">' . $meta_text . '</span>';
 
 			} else {
 				// But this blog has loads of categories so we should probably display them here
@@ -45,6 +46,7 @@
 				} else {
 					$meta_text = __( 'This entry was posted in %1$s.', 'waz' );
 				}
+				$meta_text = '<span class="tags-links cat-links">' . $meta_text . '</span>';
 
 			} // end check for categories on this blog
 
