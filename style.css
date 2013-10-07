@@ -541,7 +541,8 @@ body {
 }
 
 .post {
-  padding-bottom: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .entry-header h1 {
@@ -560,7 +561,17 @@ body {
   font-weight: light;
   text-transform: uppercase;
   line-height: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
+
+.entry-meta {
+	visibility:hidden;
+}
+.post:hover .entry-meta {
+	visibility:visible;
+}
+
 .entry-meta a {
   color: inherit;
 }
@@ -575,8 +586,8 @@ body {
 .entry-content {
   font-size: 1rem;
   font-weight: 400;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
 .entry-content p {
   margin-bottom: 0;
@@ -598,14 +609,24 @@ body {
   font-style: italic;
   text-indent: 2em;
 }
+.entry-content blockquote:first-child {
+	margin-top: 0;
+}
+.entry-content blockquote:last-child {
+	margin-bottom: 0;
+}
+/*
 .entry-content *:first-child {
   margin-bottom: 0;
   text-indent: 0;
 }
+*/
+/*
 .entry-content blockquote p {
   margin-bottom: 1em;
   text-indent: 0;
 }
+*/
 
 .entry-content blockquote p:before {
   content: open-quote;
@@ -616,6 +637,10 @@ body {
 .entry-content ul,
 .entry-content ol {
 	margin: 0;
+}
+
+.entry-content blockquote footer {
+	text-indent: 0;
 }
 
 .entry-content img {
