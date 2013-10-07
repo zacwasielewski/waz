@@ -578,10 +578,15 @@ body {
   margin: 1em 0 1em 0;
   color: #666;
   font-style: italic;
+  text-indent: 2em;
+}
+.entry-content *:first-child {
+  margin-bottom: 0;
+  text-indent: 0;
 }
 .entry-content blockquote p {
-  xmargin-bottom: 1em;
-  xtext-indent: 0;
+  margin-bottom: 1em;
+  text-indent: 0;
 }
 .entry-content blockquote p:before {
   content: open-quote;
