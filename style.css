@@ -564,16 +564,34 @@ body {
 .entry-meta a {
   color: inherit;
 }
+.entry-meta .posted-on,
+.entry-meta .cat-links,
+.entry-meta .comments-link,
+.entry-meta .byline,
+.entry-meta .edit-link {
+	margin-right: 1em;
+}
 
 .entry-content {
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 .entry-content p {
   margin-bottom: 0;
   text-indent: 2em;
 }
+.entry-content p:first-child {
+	text-indent: 0;
+}
+.entry-content ul + p,
+.entry-content ol + p,
+.entry-content blockquote + p,
+.entry-content div + p {
+	text-indent: 0;
+}
+
 .entry-content blockquote {
   margin: 1em 0 1em 0;
   color: #666;
@@ -588,11 +606,23 @@ body {
   margin-bottom: 1em;
   text-indent: 0;
 }
+
 .entry-content blockquote p:before {
   content: open-quote;
 }
 .entry-content blockquote p:after {
   content: close-quote;
+}
+.entry-content ul,
+.entry-content ol {
+	margin: 0;
+}
+
+.entry-content img {
+	-webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2);
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2);
+	margin: 1em 0;
+	display: block;
 }
 
 /* =Footer
