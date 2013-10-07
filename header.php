@@ -35,7 +35,7 @@
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'waz' ); ?></h1>
 			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'waz' ); ?>"><?php _e( 'Skip to content', 'waz' ); ?></a></div>
 
-			<?php /*wp_nav_menu( array( 'theme_location' => 'primary' ) );*/ ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
