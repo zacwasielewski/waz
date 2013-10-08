@@ -426,7 +426,8 @@ body {
   padding-bottom: 1.5rem;
 }
 .site-title {
-  font-weight: 500;
+	font-size: 2rem;
+	font-weight: 700;
   font-style: italic;
 }
 .site-title a {
@@ -439,6 +440,11 @@ body {
 
 /* =Navigation
 ----------------------------------------------- */
+
+#site-navigation {
+	margin: 1rem 0;
+	height: 3rem; /* prevent vertical shifting when hovering over links */
+}
 
 /* =Menu
 ----------------------------------------------- */
