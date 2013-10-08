@@ -427,7 +427,7 @@ body {
 }
 .site-title {
 	font-size: 2rem;
-	font-weight: 700;
+	font-weight: 500;
   font-style: italic;
 }
 .site-title a {
@@ -552,8 +552,9 @@ body {
 }
 
 .entry-header h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: italic;
+  margin-bottom: .5rem;
 }
 .entry-header h1 a{
   text-decoration: none;
@@ -583,12 +584,10 @@ body {
 }
 .entry-meta .posted-on,
 .entry-meta .cat-links,
-.entry-meta .tags-links,
 .entry-meta .comments-link,
 .entry-meta .byline,
 .entry-meta .edit-link {
 	margin-right: 1em;
-	white-space: nowrap;
 }
 
 .entry-content {
