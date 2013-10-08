@@ -47,11 +47,9 @@
 				$tags_list = get_the_tag_list( '', __( ', ', 'waz' ) );
 				if ( $tags_list ) :
 			?>
-			<!--
 			<span class="tags-links">
 				<?php printf( __( 'Tagged %1$s', 'waz' ), $tags_list ); ?>
 			</span>
-			-->
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 

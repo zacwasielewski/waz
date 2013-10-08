@@ -583,10 +583,12 @@ body {
 }
 .entry-meta .posted-on,
 .entry-meta .cat-links,
+.entry-meta .tags-links,
 .entry-meta .comments-link,
 .entry-meta .byline,
 .entry-meta .edit-link {
 	margin-right: 1em;
+	white-space: nowrap;
 }
 
 .entry-content {
