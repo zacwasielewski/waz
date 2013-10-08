@@ -441,19 +441,13 @@ body {
 /* =Navigation
 ----------------------------------------------- */
 
-#site-navigation {
-	margin: 1rem 0;
-	height: 1.5rem; /* prevent vertical shifting when hovering over links */
-}
-
-/* =Menu
------------------------------------------------ */
-
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
+	margin: .5rem 0;
+	height: 1.5rem; /* prevent vertical shifting when hovering over links */
 }
 .main-navigation ul {
 	list-style: none;
@@ -467,6 +461,7 @@ body {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	margin-right: 1rem;
 }
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -498,6 +493,10 @@ body {
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a {
 }
+
+/* =Menu
+----------------------------------------------- */
+
 
 /* Small menu */
 .menu-toggle {

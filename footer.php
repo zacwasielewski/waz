@@ -10,9 +10,14 @@
 
 	</div><!-- #content -->
 
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	</nav><!-- #site-navigation -->
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 		  <p>Copyright 2013 Zac Wasielewski</p>
+
 			<?php do_action( 'waz_credits' ); ?>
 		  <!--
 			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'waz' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'waz' ), 'WordPress' ); ?></a>
