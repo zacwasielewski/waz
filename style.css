@@ -546,14 +546,14 @@ body {
 }
 
 .post {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 .entry-header h1 {
   font-size: 2rem;
+  line-height: 1.5;
   font-style: italic;
-  margin-bottom: .5rem;
+  margin-bottom: .74rem;
 }
 .entry-header h1 a{
   text-decoration: none;
@@ -567,8 +567,7 @@ body {
   font-weight: light;
   text-transform: uppercase;
   line-height: 1.5rem;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin: .375rem 0;
 }
 
 .entry-meta {
@@ -605,13 +604,14 @@ body {
 
 .entry-content ul,
 .entry-content ol {
-	margin: .5rem 0;
+	margin: .375rem 0;
 }
 
 .entry-content blockquote {
-  margin: .5rem 0;
+  margin: .375rem 0;
   color: #666;
   font-style: italic;
+
 }
 .entry-content blockquote p:before {
   content: open-quote;
@@ -620,13 +620,13 @@ body {
   content: close-quote;
 }
 .entry-content blockquote footer {
-	margin-top: .5rem;
+	margin-top: .375rem;
 }
 
 .entry-content img {
 	-webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2);
 	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2);
-	margin: 1em 0;
+	margin: .74rem 0;
 	display: block;
 }
 
