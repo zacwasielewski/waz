@@ -613,12 +613,17 @@ body {
   font-style: italic;
 
 }
+.entry-content blockquote p + p {
+  text-indent: 0;
+}
+/*
 .entry-content blockquote p:before {
   content: open-quote;
 }
 .entry-content blockquote p:after {
   content: close-quote;
 }
+*/
 .entry-content blockquote footer {
 	margin-top: .375rem;
 }
