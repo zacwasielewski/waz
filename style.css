@@ -570,13 +570,6 @@ body {
   margin: .375rem 0;
 }
 
-.entry-meta {
-	visibility:hidden;
-}
-.post:hover .entry-meta {
-	visibility:visible;
-}
-
 .entry-meta a {
   color: inherit;
 }

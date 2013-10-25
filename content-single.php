@@ -9,6 +9,10 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
+	<div class="entry-meta">
+		<?php waz_posted_on(); ?>
+	</div>
+
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
@@ -20,8 +24,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
-
-		<?php waz_posted_on(); ?>
 
 		<?php
 			/* translators: used between list items, there is a space after the comma */
