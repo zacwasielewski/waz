@@ -35,7 +35,7 @@
 			if ( ! waz_categorized_blog() ) {
 				// This blog only has 1 category so we just need to worry about tags in the meta text
 				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was tagged %2$s.', 'waz' );
+					$meta_text = __( 'Tagged %2$s.', 'waz' );
 				} else {
 					$meta_text = __( '', 'waz' );
 				}

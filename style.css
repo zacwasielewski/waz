@@ -573,12 +573,14 @@ body {
 .entry-meta a {
   color: inherit;
 }
-.entry-meta .posted-on,
+.entry-meta .posted-on {
+}
 .entry-meta .cat-links,
 .entry-meta .comments-link,
 .entry-meta .byline,
+.entry-meta .tags-links,
 .entry-meta .edit-link {
-	margin-right: 1em;
+	margin-right: .5em;
 }
 
 .entry-content {
