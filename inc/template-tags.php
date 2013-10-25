@@ -13,7 +13,10 @@ if ( ! function_exists( 'waz_content_nav' ) ) :
  */
 function waz_content_nav( $nav_id ) {
 	global $wp_query, $post;
+	
+	return; // who even uses next/previous links these days?
 
+	/*
 	// Don't print empty markup on single pages if there's nowhere to navigate.
 	if ( is_single() ) {
 		$previous = ( is_attachment() ) ? get_post( $post->post_parent ) : get_adjacent_post( false, '', true );
@@ -52,6 +55,7 @@ function waz_content_nav( $nav_id ) {
 
 	</nav><!-- #<?php echo esc_html( $nav_id ); ?> -->
 	<?php
+	*/
 }
 endif; // waz_content_nav
 
