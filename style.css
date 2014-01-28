@@ -173,16 +173,16 @@ address {
 pre {
 	background: #eee;
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 1.5rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	padding: 1.6em;
+	line-height: 1.5;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	padding: 2rem;
 	overflow: auto;
 	max-width: 100%;
 }
 code, kbd, tt, var {
 	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	line-height: 1.2;
 }
 abbr, acronym {
 	border-bottom: 1px dotted #666;
@@ -324,6 +324,12 @@ textarea {
 	padding-left: 3px;
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
+}
+
+/* Utility */
+
+.fade {
+  color: #999;
 }
 
 /* Links */
@@ -590,11 +596,19 @@ body {
   margin-bottom: 0rem;
 }
 
+.entry-content h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-style: italic;
+  margin-top: .75rem;
+  margin-bottom: .375rem;
+}
+
 .entry-content p {
   margin-bottom: 0;
 }
 .entry-content p + p {
-  text-indent: 2em;
+  text-indent: 2rem;
 }
 
 .entry-content ul,
